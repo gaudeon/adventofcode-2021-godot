@@ -23,7 +23,7 @@ if [[ -z "${GITHUB_WORKSPACE}" ]]; then
 fi
 
 mkdir -p ${GODOT_DIR}
-curl -s -S ${GODOT_URL} --output $GODOT_DIR/${GODOT_ZIP}
-unzip -q ${GODOT_ZIP}
-chmod +x ${GODOT_BIN}
+curl -s -S ${GODOT_URL} --output ${GODOT_DIR}/${GODOT_ZIP}
+unzip -q ${GODOT_DIR}/${GODOT_ZIP}
+chmod +x ${GODOT_DIR}/${GODOT_BIN}
 ${GODOT_DIR}/${GODOT_BIN} -d -s --path $GITHUB_WORKSPACE addons/gut/gut_cmdln.gd -gdir=res://test -ginclude_subdirs -gexit
