@@ -55,3 +55,5 @@ func free_all():
 		if(is_instance_valid(_to_queue_free[i])):
 			_to_queue_free[i].queue_free()
 	_to_queue_free.clear()
+
+
