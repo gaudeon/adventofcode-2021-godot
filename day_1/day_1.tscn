@@ -1,0 +1,65 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://day_1/RunButton.gd" type="Script" id=1]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RunButton" type="Button" parent="."]
+margin_left = 3.0
+margin_top = 3.0
+margin_right = 114.0
+margin_bottom = 23.0
+text = "Run"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StateLabel" type="Label" parent="."]
+margin_left = 5.0
+margin_top = 37.0
+margin_right = 164.0
+margin_bottom = 51.0
+text = "Click \"Run\" to continue..."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TotalMeasurements" type="TextEdit" parent="."]
+margin_left = 6.0
+margin_top = 57.0
+margin_right = 427.0
+margin_bottom = 79.0
+text = "Total Measurements: 0"
+readonly = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NumIncreases" type="TextEdit" parent="."]
+margin_left = 6.0
+margin_top = 80.0
+margin_right = 427.0
+margin_bottom = 102.0
+text = "# of Increases: 0"
+readonly = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Log" type="TextEdit" parent="."]
+margin_left = 6.0
+margin_top = 104.0
+margin_right = 1018.0
+margin_bottom = 595.0
+readonly = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="RunButton" to="RunButton" method="_on_RunButton_pressed"]

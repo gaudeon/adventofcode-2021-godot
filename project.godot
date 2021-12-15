@@ -14,7 +14,8 @@ _global_script_class_icons={
 
 [application]
 
-config/name="YOUR_PROJECT_NAME_HERE"
+config/name="Advent of Code 2021"
+run/main_scene="res://day_1/day_1.tscn"
 config/icon="res://icon.png"
 
 [editor_plugins]
