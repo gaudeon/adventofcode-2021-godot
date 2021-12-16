@@ -1,12 +1,8 @@
-extends Node
+extends Reference
 
-
-
-func load_file(file):
-	var f = File.new()
-	
-	f.open(file, File.READ)
-	var text = f.get_as_text()
-	f.close()
+func load_file(file_location, fileObj = File.new()):
+	fileObj.open(file_location, fileObj.READ)
+	var text = fileObj.get_as_text()
+	fileObj.close()
 	
 	return text

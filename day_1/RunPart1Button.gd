@@ -8,6 +8,8 @@ var increases = 0
 var index = 0;
 var processing = false;
 
+var file_location = "res://day_1/day1_input.real.tres"
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass
@@ -25,15 +27,17 @@ func _process(delta):
 
 func _on_RunButton_pressed():
 	if (processing == false):
+		get_parent().get_node("Log").text = ""
 		get_parent().get_node("StateLabel").text = "Processing..."
 		data = _load_file().split("\n",false)
 		get_parent().get_node("TotalMeasurements").text = "Total Measurements: " + data.size() as String
 		index = 0
+		increases = 0
 		processing = true
 	
 func _load_file():
 	var fileio = load("res://shared/fileio.gd").new()
-	return fileio.load_file("res://day_1/day1_input.tres")
+	return fileio.load_file(file_location)
 	
 func _eval_data(index, prev_index):
 	if (prev_index < 0):

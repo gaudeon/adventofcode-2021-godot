@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://day_1/RunButton.gd" type="Script" id=1]
+[ext_resource path="res://day_1/RunPart1Button.gd" type="Script" id=1]
+[ext_resource path="res://day_1/RunPart2Button.gd" type="Script" id=2]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
@@ -9,13 +10,24 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="RunButton" type="Button" parent="."]
+[node name="RunPart1Button" type="Button" parent="."]
 margin_left = 3.0
 margin_top = 3.0
 margin_right = 114.0
 margin_bottom = 23.0
-text = "Run"
+text = "Run Part 1"
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RunPart2Button" type="Button" parent="."]
+margin_left = 127.0
+margin_top = 3.0
+margin_right = 238.0
+margin_bottom = 23.0
+text = "Run Part 2"
+script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -62,4 +74,5 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[connection signal="pressed" from="RunButton" to="RunButton" method="_on_RunButton_pressed"]
+[connection signal="pressed" from="RunPart1Button" to="RunPart1Button" method="_on_RunButton_pressed"]
+[connection signal="pressed" from="RunPart2Button" to="RunPart2Button" method="_on_RunButton_pressed"]
