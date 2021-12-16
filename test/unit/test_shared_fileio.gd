@@ -27,5 +27,3 @@ class MockFile:
 
 	func close():
 		close_called = true
-	
-	
