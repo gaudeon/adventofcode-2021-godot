@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/enchantmentinstumental_sonartuning.mp3-4f1b7fce339b4ce990b3b6f5160b5a50.mp3str"
+
+[deps]
+
+source_file="res://assets/enchantmentinstumental_sonartuning.mp3"
+dest_files=[ "res://.import/enchantmentinstumental_sonartuning.mp3-4f1b7fce339b4ce990b3b6f5160b5a50.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

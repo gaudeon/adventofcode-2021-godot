@@ -1,0 +1,5 @@
+[gd_scene format=2]
+
+[node name="VerticalLine" type="Line2D"]
+points = PoolVector2Array( 0, 0, 0, 1 )
+default_color = Color( 0, 0.0509804, 0.305882, 1 )
